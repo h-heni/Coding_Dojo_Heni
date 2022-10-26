@@ -1,13 +1,14 @@
 class BankAccount:
+    account=[]
     # don't forget to add some default values for these parameters!
     def __init__(self, int_rate, balance): 
         # your code here! (remember, instance attributes go here)
         self.int_rate= int_rate
-        self.balance=balance
-        return self
+        self.balance= balance
+        BankAccount.account.append(self)
         # don't worry about user info here; we'll involve the User class soon
     def deposit(self, amount):
-        self.balance+=amount
+        self.balance+= amount
         return self
         # your code here
     def withdraw(self, amount):
@@ -27,8 +28,15 @@ class BankAccount:
         if self.balance>0:
             self.balance+=(self.balance*self.int_rate)
         return self
+
+    @classmethod 
+    def balances_info (cls):
+            for i in cls.account:
+                i.display_account_info()
     
 heni_acc=BankAccount(0.05,60)
 asma_acc=BankAccount(0.03,300)
 heni_acc.deposit(100).deposit(20).deposit(40).withdraw(150).yield_interest().display_account_info()
 asma_acc.deposit(200).deposit(30).withdraw(150).withdraw(150).withdraw(150).withdraw(150).yield_interest().display_account_info()
+
+BankAccount.balances_info()
