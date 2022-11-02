@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>READ(all)</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-5">All Users</h1>
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Created At</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for tbl in tab %}
+                <tr class="table-active">
+                    <td>{{tbl.id}}</td>
+                    <td>{{tbl.first_name}} {{tbl.last_name}}</td>
+                    <td>{{tbl.email}}</td>
+                    <td>{{tbl.created_at}}</td>
+                </tr>
+            {% endfor %}
+
+         
+            </tbody>
+          </table>
+          <a href="/users/new">Add a New User</a>
+    </div>
+    
+</body>
+</html>
