@@ -5,11 +5,11 @@ import {useState} from 'react'
 
 
 function App() {
-  const [squares, setSquares] = useState([{color:'red'},{color:'green'},{color:'purple'}]);
+  const [squares, setSquares] = useState([{color:'red',height:'100px',width:'100px'},{color:'green',height:'100px',width:'100px'},{color:'purple',height:'100px',width:'100px'}]);
 
-  const onNewColor = (color)=>{
+  const onNewColor = (color,height,width)=>{
 
-    setSquares([...squares,{color:color}])
+    setSquares([...squares,{color:color,height:height,width:width}])
     console.log(squares);
   }
 

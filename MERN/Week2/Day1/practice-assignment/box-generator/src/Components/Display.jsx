@@ -4,7 +4,7 @@ const Display = (props) => {
     return (
     <div className='display'>
         {props.squares.map((square,i)=>{
-            return <div key={i} style={{height:'100px',width:'100px',backgroundColor:square.color}}></div>
+            return <div key={i} style={{height:square.height,width:square.width,backgroundColor:square.color}}></div>
             
         })}
     </div>
