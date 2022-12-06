@@ -1,7 +1,10 @@
 import React,{useState} from 'react'
 import axios from 'axios'
+import {useNavigate}  from "react-router-dom";
+
 
 const Form = () => {
+    const navigate = useNavigate()
     //keep track of what is being typed via useState hook
     const [title, setTitle] = useState(""); 
     const [price, setPrice] = useState(0);
@@ -16,11 +19,12 @@ const Form = () => {
         axios.post('http://localhost:8000/api/product/new',newProduct )
             .then(res=>console.log(res))
             .catch(err=>console.log(err))
+            navigate("/all-product")
+
     }
 
     return (
         <form onSubmit={onSubmitHandler}>
-            <h1>Product Manager</h1>
 
         <label>Title</label>
         <input type="text" onChange={(e)=>{setTitle(e.target.value)} }/> <br />
@@ -29,7 +33,7 @@ const Form = () => {
         <label>Description</label>
         <input type="text" onChange={(e)=>{setDescription(e.target.value)}}/> <br />
 
-        <button>CREATE</button>
+        <button>Create</button>
     </form>
   )
 }

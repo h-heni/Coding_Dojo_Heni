@@ -15,10 +15,9 @@ const List = () => {
     },[])
   return (
     <div>
-        <h1>All Products:</h1>
-        {loaded && list.map((el,i)=>{
+        {loaded ? list.map((el,i)=>{
             return        <p key={i}><Link to={`/${el._id}`}>{el.title}</Link></p>
-        })}
+        }): <p>...loading</p>}
 
 
     </div>
