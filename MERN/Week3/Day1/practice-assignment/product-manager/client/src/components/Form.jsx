@@ -19,12 +19,9 @@ const Form = () => {
     }
 
     return (
-    <form onSubmit={onSubmitHandler}>
-              <div>
-        {JSON.stringify(title)}
-        {JSON.stringify(price)}
-        {JSON.stringify(description)}
-      </div>
+        <form onSubmit={onSubmitHandler}>
+            <h1>Product Manager</h1>
+
         <label>Title</label>
         <input type="text" onChange={(e)=>{setTitle(e.target.value)} }/> <br />
         <label>Price</label>
