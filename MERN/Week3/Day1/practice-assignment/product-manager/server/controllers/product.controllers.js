@@ -15,13 +15,13 @@ module.exports.findOneSingleProducts = (req, res) => {
 module.exports.createNewProducts = (req, res) => {
     Product.create(req.body)
     .then(newlyCreatedProduct => res.json({ newlyCreatedProduct }))
-    .catch(err => res.json({ message: "Something went wrong", error: err }));
+    .catch(err => res.status(400).json({ message: "Something went wrong", error: err }));
 };
 
 module.exports.updateExistingProducts = (req, res) => {
-    Product.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+    Product.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true , runValidators:true })
     .then(updatedProducts => res.json({ updatedProducts }))
-    .catch(err => res.json({ message: "Something went wrong", error: err }));
+    .catch(err => res.status(400).json({ message: "Something went wrong", error: err }));
 };
 
 module.exports.deleteAnExistingProducts = (req, res) => {
