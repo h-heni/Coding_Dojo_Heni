@@ -1,6 +1,8 @@
-const UserController = require('../controllers/user.controllers');
-// const MovieController = require("../controllers/movie.controllers");
-const { authenticate } = require('../config/jwt.config');
+const UserController = require('../controllers/log.controllers');
+const {getUser,getUserFriends,addRemoveFriend} = require ("../controllers/user.controllers");
+const { getFeedPosts, getUserPosts, likePost } = require ("../controllers/posts.controller");
+
+  const { authenticate } = require('../config/jwt.config');
 
 module.exports = (app) => {
     app.post('/api/register', UserController.register)
@@ -8,12 +10,15 @@ module.exports = (app) => {
     app.post('/api/logout', UserController.logout)
 
 
-    // app.get("/api/movie/", MovieController.findAllMovies);
-    // app.get("/api/movie/:id" ,authenticate, MovieController.findOneSingleMovies);
-    // app.put("/api/movie/update/:id",authenticate,MovieController.updateExistingMovies);
-    // app.post("/api/movie/new" ,authenticate,MovieController.createNewMovies);
-    // app.delete("/api/movie/delete/:id",authenticate, MovieController.deleteAnExistingMovies);
-    // app.put('/api/movies/review/:id',authenticate,MovieController.addReview);
+
+    app.get('/api/:id',getUser)
+    app.get('/api/:id/friend',getUserFriends)
+    app.get('/api/:id/:friend',addRemoveFriend)
+
+
+    app.get("/api/post",getFeedPosts)
+    app.get('/api/post/:user',getUserPosts)
+    app.put('/api/:id/like',likePost)
 
 
 }
