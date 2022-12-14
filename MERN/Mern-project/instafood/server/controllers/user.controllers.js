@@ -12,6 +12,7 @@ res.status(200).json(user);
 res.status(404).json({ message: err.message });
 }
 },
+
 getallUser : async (req, res) => {
 try {
 const users = await User.find();

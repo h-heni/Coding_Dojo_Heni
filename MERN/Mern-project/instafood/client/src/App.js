@@ -23,7 +23,7 @@ function App() {
           <CssBaseline />
       <Routes>
         
-      <Route path='/home' element={isAuth ?<HomePage/> : <Login/>}/>
+      <Route path='/home' element={isAuth ?<HomePage/> : <div className="App"><Login/></div> }/>
       </Routes>
       </ThemeProvider>
       <div className="App">
