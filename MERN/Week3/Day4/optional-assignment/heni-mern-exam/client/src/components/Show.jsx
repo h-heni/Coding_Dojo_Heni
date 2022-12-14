@@ -23,9 +23,10 @@ const Show = (props) => {
 
     const deletePerson = (personId) => {
         axios.delete('http://localhost:8000/api/movie/delete/' + personId)
-            .then(res => {console.log(res.data)})
+            .then(res => {console.log(res.data)
+                navigate("/movies")
+            })
             .catch(err => console.error(err));
-            navigate("/movies")
     }
 
     return (
