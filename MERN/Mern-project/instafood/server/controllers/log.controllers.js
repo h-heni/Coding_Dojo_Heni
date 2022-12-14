@@ -29,8 +29,10 @@ module.exports ={
                             if (isValid === true) {
                                 // if we made it this far, the password was correct
                                 // {httpOnly: true } ensures that the token is only accessible from the server.
-                                res.cookie("userToken", jwt.sign({ id: user._id }, secret), { httpOnly: true }).json({ msg: "success" });
-
+                                // res.status(200).cookie("userToken", jwt.sign({ id: user._id }, secret), { httpOnly: true }).json({ msg: "success" });
+                                const token = jwt.sign({ id: user._id }, secret);
+                                delete user.password;
+                                res.status(200).json({ token, user });
                             }
                             else {
                                 // password wasn't a match!

@@ -1,5 +1,5 @@
 const UserController = require('../controllers/log.controllers');
-const {getUser,getUserFriends,addRemoveFriend} = require ("../controllers/user.controllers");
+const {getallUser,getUser,getUserFriends,addRemoveFriend} = require ("../controllers/user.controllers");
 const { getFeedPosts, getUserPosts, likePost } = require ("../controllers/posts.controller");
 
   const { authenticate } = require('../config/jwt.config');
@@ -11,6 +11,7 @@ module.exports = (app) => {
 
 
 
+    app.get('/api/all',getallUser)
     app.get('/api/:id',getUser)
     app.get('/api/:id/friend',getUserFriends)
     app.get('/api/:id/:friend',addRemoveFriend)

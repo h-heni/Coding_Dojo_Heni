@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from "react-redux";
+import { setLogin } from "../state";
 
 import './login.css'
     const Login = (props) => {
         const navigate = useNavigate()
+        const dispatch = useDispatch();
+
         const turn =() =>{
             navigate('/register')
         }
         const [errors, setErrors] = useState({})
-        const [login, setLogin] = useState({
+        const [loginin, setLoginin] = useState({
             email: "",
             password: ""
         })
@@ -17,21 +21,27 @@ import './login.css'
      // handle onChange for login inputs
      const handleLoginChange = (e) => {
         e.preventDefault();
-        setLogin({
-            ...login,
+        setLoginin({
+            ...loginin,
             [e.target.name]: e.target.value
         })
     }
 
 const loginHandler = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8000/api/login", login, { withCredentials: true })
+    axios.post("http://localhost:8000/api/login", loginin)
         .then(res => {
             console.log("Cookie be like", document.cookie);
-            console.log("Data be like", res.data);
-            navigate('/movies');
+            console.log("Data be like", res.data.user);
+            dispatch(
+                setLogin({
+                  user: res.data.user,
+                  token: res.data.token,
+                })
+              );
+            navigate('/home');
         })
-        .catch(err => {console.log("lkjhlh",err.response.data);
+        .catch(err => {console.log(err.response.data);
         setErrors(
             
             err.response.data
@@ -46,9 +56,9 @@ const loginHandler = (e) => {
             <p className="text-white-50 mb-5">Please enter your Email and Password!</p>
             <form className="login-form" onSubmit={loginHandler}>
                 <label htmlFor="email">Email</label>
-                <input value={login.email} onChange={handleLoginChange}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+                <input value={loginin.email} onChange={handleLoginChange}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
                 <label htmlFor="password">Password</label>
-                <input value={login.password} onChange={handleLoginChange} type="password" placeholder="********" id="password" name="password" />
+                <input value={loginin.password} onChange={handleLoginChange} type="password" placeholder="********" id="password" name="password" />
                 <br />
                 <div>
                 <button type="submit">Log In</button>

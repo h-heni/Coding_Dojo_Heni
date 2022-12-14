@@ -1,8 +1,9 @@
-import Post from "../models/post.models";
-import User from "../models/user.models";
+const Post =require ("../models/post.models");
+const User =require ("../models/user.models");
 
 /* CREATE */
-export const createPost = async (req, res) => {
+module.exports ={
+createPost : async (req, res) => {
   try {
     const { userId, description, picturePath } = req.body;
     const user = await User.findById(userId);
@@ -24,19 +25,19 @@ export const createPost = async (req, res) => {
   } catch (err) {
     res.status(409).json({ message: err.message });
   }
-};
+},
 
 /* READ */
-export const getFeedPosts = async (req, res) => {
+getFeedPosts : async (req, res) => {
   try {
     const post = await Post.find();
     res.status(200).json(post);
   } catch (err) {
     res.status(404).json({ message: err.message });
   }
-};
+},
 
-export const getUserPosts = async (req, res) => {
+getUserPosts : async (req, res) => {
   try {
     const { userId } = req.params;
     const post = await Post.find({ userId });
@@ -44,10 +45,10 @@ export const getUserPosts = async (req, res) => {
   } catch (err) {
     res.status(404).json({ message: err.message });
   }
-};
+},
 
 /* UPDATE */
-export const likePost = async (req, res) => {
+likePost : async (req, res) => {
   try {
     const { id } = req.params;
     const { userId } = req.body;
@@ -70,4 +71,5 @@ export const likePost = async (req, res) => {
   } catch (err) {
     res.status(404).json({ message: err.message });
   }
-};
+}
+}
