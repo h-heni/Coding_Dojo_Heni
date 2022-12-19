@@ -1,0 +1,15 @@
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\bin\Debug\net6.0\Fundamentals1.exe
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\bin\Debug\net6.0\Fundamentals1.deps.json
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\bin\Debug\net6.0\Fundamentals1.runtimeconfig.json
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\bin\Debug\net6.0\Fundamentals1.dll
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\bin\Debug\net6.0\Fundamentals1.pdb
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\Fundamentals1.csproj.AssemblyReference.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\Fundamentals1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\Fundamentals1.AssemblyInfoInputs.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\Fundamentals1.AssemblyInfo.cs
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\Fundamentals1.csproj.CoreCompileInputs.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\Fundamentals1.dll
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\refint\Fundamentals1.dll
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\Fundamentals1.pdb
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\Fundamentals1.genruntimeconfig.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day1\practice-assignment\Fundamentals1\obj\Debug\net6.0\ref\Fundamentals1.dll
