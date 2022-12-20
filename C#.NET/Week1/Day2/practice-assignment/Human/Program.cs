@@ -1,10 +1,10 @@
 ﻿class Human 
 {
-    public string Name ;
-    public int Strength;
-    public int Intelligence;
-    public int Dexterity;
-    public int Health;
+    public string Name {get;set;}
+    public int Strength {get;set;}
+    public int Intelligence {get;set;}
+    public int Dexterity {get;set;}
+    public int Health {get;set;}
 
 public Human (string name){
     Name=name;
