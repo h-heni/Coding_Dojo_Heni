@@ -1,0 +1,15 @@
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\bin\Debug\net6.0\Boxing.exe
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\bin\Debug\net6.0\Boxing.deps.json
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\bin\Debug\net6.0\Boxing.runtimeconfig.json
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\bin\Debug\net6.0\Boxing.dll
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\bin\Debug\net6.0\Boxing.pdb
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\Boxing.csproj.AssemblyReference.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\Boxing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\Boxing.AssemblyInfoInputs.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\Boxing.AssemblyInfo.cs
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\Boxing.csproj.CoreCompileInputs.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\Boxing.dll
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\refint\Boxing.dll
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\Boxing.pdb
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\Boxing.genruntimeconfig.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day2\practice-assignment\Boxing\obj\Debug\net6.0\ref\Boxing.dll
