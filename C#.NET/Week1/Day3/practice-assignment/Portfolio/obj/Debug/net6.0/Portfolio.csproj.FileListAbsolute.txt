@@ -19,3 +19,5 @@ C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day3\practice-assignment\Po
 C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day3\practice-assignment\Portfolio\obj\Debug\net6.0\Portfolio.pdb
 C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day3\practice-assignment\Portfolio\obj\Debug\net6.0\Portfolio.genruntimeconfig.cache
 C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day3\practice-assignment\Portfolio\obj\Debug\net6.0\ref\Portfolio.dll
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day3\practice-assignment\Portfolio\obj\Debug\net6.0\Portfolio.RazorAssemblyInfo.cache
+C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day3\practice-assignment\Portfolio\obj\Debug\net6.0\Portfolio.RazorAssemblyInfo.cs

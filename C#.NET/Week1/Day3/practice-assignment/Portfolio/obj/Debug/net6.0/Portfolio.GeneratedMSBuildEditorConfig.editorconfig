@@ -14,3 +14,15 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\keiro\Desktop\Coding_Dojo_Heni\C#.NET\Week1\Day3\practice-assignment\Portfolio
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/keiro/Desktop/Coding_Dojo_Heni/C\#.NET/Week1/Day3/practice-assignment/Portfolio/Views/Hello/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keiro/Desktop/Coding_Dojo_Heni/C\#.NET/Week1/Day3/practice-assignment/Portfolio/Views/Hello/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/keiro/Desktop/Coding_Dojo_Heni/C\#.NET/Week1/Day3/practice-assignment/Portfolio/Views/Hello/Project.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9cUHJvamVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
