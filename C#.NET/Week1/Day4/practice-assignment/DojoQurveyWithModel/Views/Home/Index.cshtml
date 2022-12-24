@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+@using DojoQurveyWithModel.Models
+@model Survey
+
+    <Form action="survey" method="post">
+        <label for="">Your Name: </label>
+        <input asp-for="Name"> <br>
+        <label for="">Dojo Location</label>
+        <select asp-for="Location" id="">
+            <option value="San Jose">San Jose</option>
+            <option value="LA">LA</option>
+            <option value="Cartel">Cartel</option>
+        </select> <br>
+        <label for="">Favorite Language</label>
+        <select asp-for="Language" id="">
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="Mern">Mern</option>
+        </select> <br>
+        <label for="">Comment (optional)</label> <br>
+        <textarea asp-for="Comment" id="" cols="30" rows="10"></textarea> <br>
+        <input type="submit" value="Submit">
+
+    </Form>
+</body>
+</html>
