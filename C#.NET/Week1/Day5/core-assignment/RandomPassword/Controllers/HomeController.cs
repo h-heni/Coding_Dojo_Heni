@@ -26,14 +26,12 @@ public class HomeController : Controller
         HttpContext.Session.SetString("Random", RandomString(14));
         return View(Newcode);
     }
-        static int count(int code){
-            int num=code;
-            code=num+1;
-            return code;
-        }
     [HttpPost("generate")]
     public IActionResult Generate(Generator Newcode)
     {
+        static int count(int code){
+            return code+=1;
+        }
         Newcode.code=RandomString(14);
         Newcode.count=count(Newcode.count);
         HttpContext.Session.SetInt32("Count",Newcode.count);
