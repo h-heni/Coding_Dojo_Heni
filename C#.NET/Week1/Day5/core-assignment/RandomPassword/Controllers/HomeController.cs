@@ -21,16 +21,23 @@ public class HomeController : Controller
     return new string(Enumerable.Repeat(chars, length)
         .Select(s => s[random.Next(s.Length)]).ToArray());
 }
-    public IActionResult Index()
+    public IActionResult Index(Generator Newcode)
     {
         HttpContext.Session.SetString("Random", RandomString(14));
-        return View();
+        return View(Newcode);
     }
-    [HttpPost]
-    public IActionResult Privacy()
+        static int count(int code){
+            int num=code;
+            code=num+1;
+            return code;
+        }
+    [HttpPost("generate")]
+    public IActionResult Generate(Generator Newcode)
     {
-
-        return View("Index");
+        Newcode.code=RandomString(14);
+        Newcode.count=count(Newcode.count);
+        HttpContext.Session.SetInt32("Count",Newcode.count);
+        return RedirectToAction("Index",Newcode);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,4 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<p>@Context.Session.GetString("Random")</p>
+@model Generator
+<div class="text-center">
+    <h1>Random Password @Context.Session.GetInt32("Count")</h1>
+<p>@Model.code</p>
+    <form asp-action="Generate" method="post">
+    <input type="hidden" asp-for="count" value="@Model.count">
+        <input type="submit" value="Generate">
+    </form>
