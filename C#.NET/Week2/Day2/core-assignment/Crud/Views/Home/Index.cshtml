@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Dish>
+<h1 class="text-center">Welcome to CRUDelicious</h1>
+ <h3>Check out some recent dishes</h3>
+
+@foreach (Dish item in Model)
+{
+    <p><a href="/dishes/@item.DishId">@item.Name</a> <t>by @item.Chef</t></p>
+}
