@@ -1,0 +1,22 @@
+@model List<Dish>
+
+<table class="table">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>Chef</th>
+        <th>Tastiness</th>
+        <th>Calories</th>
+    </tr>
+  </thead>
+  <tbody>
+      @foreach (var item in Model)
+      {
+    <tr class="table-active">
+        <td>@item.DishtName</td>
+        <td>@item.Creator.FirstName @item.Creator.LastName</td>
+        <td>@item.Tastiness</td>
+        <td>@item.Calories</td>
+
+    </tr >
+      } 
