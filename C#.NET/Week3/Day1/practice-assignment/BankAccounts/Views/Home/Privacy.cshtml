@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+@using Microsoft.AspNetCore.Http
+@model Transaction
+<h1>Welcome, @Context.Session.GetString("RegisterName")</h1>
+
+<h1 style="color: green;">Current Balace: $@String.Format("{0:0.00}", ViewBag.Amount)</h1>
+
+<form asp-action="AddTransaction" asp-route-RegisterId="@ViewBag.RegisterId" method="post">
+    <div class="form-group">
+        <label asp-for="Amount">Deposit / Withdraw </label>
+        <input asp-for="Amount">
+        <input type="submit" value="Submit">
+        </div>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Transaction t in ViewBag.Alltr)
+        {
+            <tr>
+                <td>@String.Format("{0:0.00}", t.Amount)</td>
+                <td>@t.CreatedAt</td>
+            </tr>
+        }
+        
+    </tbody>
+</table>

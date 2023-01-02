@@ -1,0 +1,18 @@
+@model Login
+<h1 class="mb-5">Log in</h1>
+<form asp-action="Login" asp-controller="Home" class="form-control text-center">
+
+    <div class="mb-3 col-7">
+    <span asp-validation-for="LogEmail"></span> <br>
+    <label class="col-4" asp-for="LogEmail"></label>
+    <input asp-for="LogEmail">
+    </div>
+    <div class="mb-3 col-7">
+    <span asp-validation-for="LogPassword"></span><br>
+    <label class="col-4" asp-for="LogPassword"></label>
+    <input asp-for="LogPassword">
+    </div>
+    <input type="submit" value="Submit" class="btn btn-secondary">
+
+
+</form>
