@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+@model Category
+<div class="d-flex g-5">
+    
+<div class="container w-50">
+<h1>New Category</h1>
+    <form asp-action="CreateCategory" method="post">
+        <div class="form-groupm-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name">
+        </div>
+    <input type="submit" value="Add Category">
+    </form>
+</div>
+<div class="container w-50">
+<h1>All Category</h1>
+@if (ViewBag.AllCat!=null)
+{
+    foreach(Category c in ViewBag.AllCat)
+    {
+<p><a asp-route-CategoryId="@c.CategoryId" asp-action="UpdateCat">@c.Name</a></p>
+
+    }
+}
+</div>
+
+
+</div>

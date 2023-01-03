@@ -1,0 +1,27 @@
+﻿
+@model Product
+<div class="d-flex g-5">
+    
+<div class="container w-50">
+<h1>New Product</h1>
+    <form asp-action="CreateProduct" method="post">
+        <div class="form-groupm-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name">
+        </div>
+        <div class="form-groupm-3">
+            <label asp-for="Description"></label>
+            <input asp-for="Description">
+        </div>
+        <div class="form-groupm-3">
+            <label asp-for="Price"></label>
+            <input asp-for="Price">
+        </div>
+        <input type="submit" value="Add Product">
+    </form>
+</div>
+<div  class="container w-50">
+
+<partial name="_All"/>
+</div>
+</div>

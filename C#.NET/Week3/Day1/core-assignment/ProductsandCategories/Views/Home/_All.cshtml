@@ -1,0 +1,11 @@
+
+    <h1>All Product</h1>
+    @if (ViewBag.AllProduct!=null)
+    {
+        
+    @foreach (Product p in  ViewBag.AllProduct)
+    {
+        <p><a asp-route-ProductId="@p.ProductId" asp-action="UpdateProd">@p.Name</a></p>
+        
+    }
+    }
