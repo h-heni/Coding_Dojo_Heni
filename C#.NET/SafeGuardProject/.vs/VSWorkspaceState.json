@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SafeGuardProject",
+    "\\SafeGuardProject\\Models",
+    "\\SafeGuardProject\\Models\\Authentication",
+    "\\SafeGuardProject\\Models\\Authentication\\SignUp"
+  ],
+  "SelectedNode": "\\SafeGuardProject\\SafeGuardProject.csproj",
+  "PreviewInSolutionExplorer": false
+}

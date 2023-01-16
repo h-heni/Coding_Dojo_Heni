@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SafeGuardProject.props" />
+</Project>
